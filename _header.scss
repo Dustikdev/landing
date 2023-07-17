@@ -1,3 +1,22 @@
-﻿h {
-    color: wheat;
+﻿header {
+  margin: 0 auto;
+  padding: 30px 0 53px 0;
+  width: 1305px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.header-img {
+  width: 157px;
+}
+nav {
+  display: flex;
+  gap: 30px;
+}
+.header-refs {
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }

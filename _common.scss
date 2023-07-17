@@ -1,0 +1,35 @@
+﻿$main-font: "Gotham Pro", sans-serif;
+$secondary-font: "Stolzl", monospace;
+$button-color: #d5621d;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+}
+body {
+  background-color: #210e09;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 5px;
+  &.fill {
+    background-color: $button-color;
+  }
+  &.unfill {
+    border: 2px solid $button-color;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+  }
+}
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
