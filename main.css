@@ -18,7 +18,13 @@ a {
   border-radius: 5px;
 }
 .btn.fill {
+  display: inline-block;
   background-color: #d5621d;
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.05em;
 }
 .btn.unfill {
   border: 2px solid #d5621d;
@@ -32,6 +38,38 @@ a {
 .container {
   max-width: 1296px;
   margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.leads {
+  display: inline-block;
+  font-family: Gotham Pro;
+  letter-spacing: 0.05em;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 10px 20px 7px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: Gotham Pro;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+}
+
+.slider {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #d5621d;
 }
 
 header {
@@ -64,6 +102,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 120px;
 }
 #hero .tabs {
   display: flex;
@@ -95,4 +134,44 @@ nav {
 }
 #hero .right-tab {
   background-color: rgba(213, 98, 29, 0.0509803922);
+}
+#hero .left-side {
+  font-family: Gotham Pro;
+  position: relative;
+}
+#hero .left-side .div-since {
+  position: absolute;
+  bottom: 195px;
+  left: 60px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  width: 154px;
+  height: 44px;
+  padding: 10px 20px 7px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#hero .left-side span {
+  position: absolute;
+  bottom: 45px;
+  left: 60px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+}
+
+#menu h2 {
+  padding: 40px 0 80px 0;
+}
+#menu .section-header {
+  text-align: center;
+}
+#menu .section-footer {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

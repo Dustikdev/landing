@@ -1,6 +1,7 @@
 ﻿$main-font: "Gotham Pro", sans-serif;
 $secondary-font: "Stolzl", monospace;
 $button-color: #d5621d;
+$slider-color: #d5621d;
 
 * {
   box-sizing: border-box;
@@ -18,7 +19,13 @@ a {
   padding: 15px 30px;
   border-radius: 5px;
   &.fill {
+    display: inline-block;
     background-color: $button-color;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.05em;
   }
   &.unfill {
     border: 2px solid $button-color;
@@ -30,6 +37,38 @@ a {
   }
 }
 .container {
-    max-width: 1296px;
-    margin: 0 auto;
-  }
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.leads {
+  display: inline-block;
+  font-family: Gotham Pro;
+  letter-spacing: 0.05em;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 10px 20px 7px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: Gotham Pro;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+}
+
+.slider {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: $slider-color;
+}
