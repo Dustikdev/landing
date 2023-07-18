@@ -41,6 +41,16 @@ a {
   margin-bottom: 150px;
 }
 
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  padding: 40px 0 80px 0;
+}
+
 .lead {
   font-family: Gotham Pro;
   letter-spacing: 0.05em;
@@ -171,14 +181,6 @@ nav {
   letter-spacing: 0.05em;
 }
 
-#menu h2 {
-  padding: 40px 0 80px 0;
-}
-#menu .section-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 #menu .section-footer {
   text-align: center;
 }
@@ -246,6 +248,7 @@ nav {
 }
 #events-tourists .side-item h2 {
   padding-top: 5px;
+  padding-bottom: 0;
 }
 #events-tourists .side-item .item-text {
   width: 376px;
@@ -254,4 +257,89 @@ nav {
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+}
+
+#techrider .rider-content {
+  display: flex;
+  justify-content: center;
+  gap: 134px;
+}
+#techrider .left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#techrider .dropdown-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 526px;
+  font-family: Gotham Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+}
+#techrider .dropdown-menu.closed {
+  background-color: rgba(213, 98, 29, 0.1019607843);
+}
+#techrider .dropdown-menu.opened {
+  background-color: #d5621d;
+}
+#techrider .dropdown-menu.opened .content {
+  padding-top: 20px;
+  text-transform: none;
+  font-family: Stolzl;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+#techrider .right-side {
+  font-family: Gotham Pro;
+  letter-spacing: 0.05em;
+}
+#techrider .right-side h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+#techrider .right-side .right-grid {
+  display: grid;
+  gap: 25px 24px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+#techrider .right-side span {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#techrider .right-side .icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #D5621D;
+}
+#techrider .right-side .icon img {
+  position: absolute;
+  left: 22%;
+  top: 23%;
+}
+#techrider .right-side .icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }/*# sourceMappingURL=main.css.map */

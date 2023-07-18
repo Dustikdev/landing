@@ -73,14 +73,6 @@
 }
 
 #menu {
-  h2 {
-    padding: 40px 0 80px 0;
-  }
-  .section-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .section-footer {
     text-align: center;
   }
@@ -152,6 +144,7 @@
 
     h2 {
       padding-top: 5px;
+      padding-bottom: 0;
     }
 
     .item-text {
@@ -161,6 +154,101 @@
       font-weight: 400;
       line-height: 21px;
       text-align: center;
+    }
+  }
+}
+
+#techrider {
+  .rider-content {
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 526px;
+    font-family: Gotham Pro;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5px;
+
+    &.closed {
+      background-color: #d5621d1a;
+    }
+
+    &.opened {
+      background-color: #d5621d;
+      .content {
+        padding-top: 20px;
+        text-transform: none;
+        font-family: Stolzl;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .right-side {
+    font-family: Gotham Pro;
+    letter-spacing: 0.05em;
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+    .right-grid {
+        display: grid;
+        gap: 25px 24px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    span {
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid #D5621D;  
+        
+        img {
+            position: absolute;
+            left: 22%;
+            top: 23%;
+        }
+    }
+    .icons {
+       display: flex;
+       justify-content: center;
+       gap: 25px; 
     }
   }
 }
