@@ -16,7 +16,7 @@ a {
 }
 .btn {
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 13px 26px;
   border-radius: 5px;
   &.fill {
     display: inline-block;
@@ -42,8 +42,7 @@ a {
   margin-bottom: 150px;
 }
 
-.leads {
-  display: inline-block;
+.lead {
   font-family: Gotham Pro;
   letter-spacing: 0.05em;
   background-color: white;
@@ -53,7 +52,6 @@ a {
   line-height: 21px;
   padding: 10px 20px 7px 20px;
   border-radius: 5px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -64,6 +62,7 @@ h2 {
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .slider {

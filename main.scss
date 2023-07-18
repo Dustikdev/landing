@@ -65,7 +65,7 @@
       left: 60px;
       text-transform: uppercase;
       font-size: 40px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 60px;
       letter-spacing: 0.05em;
     }
@@ -77,12 +77,13 @@
     padding: 40px 0 80px 0;
   }
   .section-header {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .section-footer {
     text-align: center;
   }
-
   .sliders-grid-flex {
     margin-bottom: 96px;
     display: flex;
@@ -95,7 +96,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 56px 104px;
   }
-
   .menu-item {
     display: flex;
     gap: 25px;
@@ -136,5 +136,31 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+  }
+}
+
+#events-tourists {
+  display: flex;
+  gap: 44px;
+  align-items: start;
+
+  .side-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+
+    h2 {
+      padding-top: 5px;
+    }
+
+    .item-text {
+      width: 376px;
+      font-family: Stolzl;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;
+    }
   }
 }

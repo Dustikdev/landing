@@ -14,7 +14,7 @@ a {
 
 .btn {
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 13px 26px;
   border-radius: 5px;
 }
 .btn.fill {
@@ -41,8 +41,7 @@ a {
   margin-bottom: 150px;
 }
 
-.leads {
-  display: inline-block;
+.lead {
   font-family: Gotham Pro;
   letter-spacing: 0.05em;
   background-color: white;
@@ -52,7 +51,6 @@ a {
   line-height: 21px;
   padding: 10px 20px 7px 20px;
   border-radius: 5px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -63,6 +61,7 @@ h2 {
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .slider {
@@ -167,7 +166,7 @@ nav {
   left: 60px;
   text-transform: uppercase;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 60px;
   letter-spacing: 0.05em;
 }
@@ -176,7 +175,9 @@ nav {
   padding: 40px 0 80px 0;
 }
 #menu .section-header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #menu .section-footer {
   text-align: center;
@@ -230,4 +231,27 @@ nav {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+}
+
+#events-tourists {
+  display: flex;
+  gap: 44px;
+  align-items: start;
+}
+#events-tourists .side-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+#events-tourists .side-item h2 {
+  padding-top: 5px;
+}
+#events-tourists .side-item .item-text {
+  width: 376px;
+  font-family: Stolzl;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
