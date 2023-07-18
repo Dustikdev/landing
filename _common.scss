@@ -67,8 +67,15 @@ h2 {
 }
 
 .slider {
+  position: relative;
   width: 50px;
   height: 50px;
   border-radius: 5px;
   background-color: $slider-color;
+
+  img {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
 }
