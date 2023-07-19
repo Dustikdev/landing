@@ -46,14 +46,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-h2 {
-  padding: 40px 0 80px 0;
+  h2 {
+    padding: 40px 0 80px 0;
+  }
 }
 
 .lead {
-  font-family: Gotham Pro;
+  font-family: $main-font;
   letter-spacing: 0.05em;
   background-color: white;
   color: black;
@@ -67,7 +67,7 @@ h2 {
 
 h2 {
   text-transform: uppercase;
-  font-family: Gotham Pro;
+  font-family: $main-font;
   font-size: 40px;
   font-weight: 900;
   line-height: 60px;
@@ -87,4 +87,25 @@ h2 {
     left: 30%;
     top: 30%;
   }
+}
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #d5621d;
+  
+
+  img {
+    position: absolute;
+    left: 22%;
+    top: 23%;
+  }
+}
+
+.dividing-line {
+  background-color: white;
+  height: 1px;
+  opacity: 0.5;
 }

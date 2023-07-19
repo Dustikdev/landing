@@ -46,13 +46,12 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
-h2 {
+.section-header h2 {
   padding: 40px 0 80px 0;
 }
 
 .lead {
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   letter-spacing: 0.05em;
   background-color: white;
   color: black;
@@ -66,7 +65,7 @@ h2 {
 
 h2 {
   text-transform: uppercase;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 40px;
   font-weight: 900;
   line-height: 60px;
@@ -85,6 +84,26 @@ h2 {
   position: absolute;
   left: 30%;
   top: 30%;
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #d5621d;
+}
+.icon img {
+  position: absolute;
+  left: 22%;
+  top: 23%;
+}
+
+.dividing-line {
+  background-color: white;
+  height: 1px;
+  opacity: 0.5;
 }
 
 header {
@@ -113,18 +132,74 @@ nav {
   line-height: 21px;
 }
 
-#hero {
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+.footer-content .left-side {
+  border: 2px solid #d5621d;
+  background-color: rgba(213, 98, 29, 0.1019607843);
+  padding: 48px;
+}
+.footer-content .left-side h4 {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-content .left-side .text {
+  font-family: "Stolzl", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 35px;
+}
+.footer-content .left-side .text:last-child {
+  margin-bottom: 0;
+}
+.footer-content .left-side .top-content {
+  margin-bottom: 45px;
+}
+.footer-content .left-side .bottom-content {
+  margin-top: 45px;
+}
+
+.underline-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+  opacity: 0.5;
+}
+.underline-text span {
+  font-family: "Stolzl", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+#posters .posters-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+#presentation {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 120px;
 }
-#hero .tabs {
+#presentation .tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#hero .images {
+#presentation .images {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -134,10 +209,10 @@ nav {
   grid-template-rows: 1fr 1fr;
   padding: 39px 35px 37px 35px;
 }
-#hero .tab {
+#presentation .tab {
   background-color: rgba(213, 98, 29, 0.1019607843);
   flex: 1;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
@@ -147,14 +222,14 @@ nav {
   text-transform: uppercase;
   text-align: center;
 }
-#hero .right-tab {
+#presentation .right-tab {
   background-color: rgba(213, 98, 29, 0.0509803922);
 }
-#hero .left-side {
-  font-family: Gotham Pro;
+#presentation .left-side {
+  font-family: "Gotham Pro", sans-serif;
   position: relative;
 }
-#hero .left-side .div-since {
+#presentation .left-side .div-since {
   position: absolute;
   bottom: 195px;
   left: 60px;
@@ -170,7 +245,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
 }
-#hero .left-side span {
+#presentation .left-side span {
   position: absolute;
   bottom: 45px;
   left: 60px;
@@ -203,7 +278,7 @@ nav {
 #menu .item-name-price {
   display: flex;
   justify-content: space-between;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
@@ -220,7 +295,7 @@ nav {
   line-height: 21px;
 }
 #menu .item-weight {
-  font-family: Stolzl;
+  font-family: "Stolzl", monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -229,7 +304,7 @@ nav {
 }
 #menu .item-description {
   width: 351px;
-  font-family: Stolzl;
+  font-family: "Stolzl", monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -252,7 +327,7 @@ nav {
 }
 #events-tourists .side-item .item-text {
   width: 376px;
-  font-family: Stolzl;
+  font-family: "Stolzl", monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -275,7 +350,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 526px;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
@@ -293,13 +368,13 @@ nav {
 #techrider .dropdown-menu.opened .content {
   padding-top: 20px;
   text-transform: none;
-  font-family: Stolzl;
+  font-family: "Stolzl", monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
 }
 #techrider .right-side {
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   letter-spacing: 0.05em;
 }
 #techrider .right-side h3 {
@@ -324,19 +399,6 @@ nav {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-}
-#techrider .right-side .icon {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid #D5621D;
-}
-#techrider .right-side .icon img {
-  position: absolute;
-  left: 22%;
-  top: 23%;
 }
 #techrider .right-side .icons {
   display: flex;

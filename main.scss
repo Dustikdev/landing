@@ -1,7 +1,9 @@
 ﻿@import "common.scss";
 @import "header.scss";
+@import "footer.scss";
+@import "poster.scss";
 
-#hero {
+#presentation {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -25,7 +27,7 @@
   .tab {
     background-color: #d5621d1a;
     flex: 1;
-    font-family: Gotham Pro;
+    font-family: $main-font;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -39,7 +41,7 @@
     background-color: #d5621d0d;
   }
   .left-side {
-    font-family: Gotham Pro;
+    font-family: $main-font;
     position: relative;
 
     .div-since {
@@ -95,7 +97,7 @@
   .item-name-price {
     display: flex;
     justify-content: space-between;
-    font-family: Gotham Pro;
+    font-family: $main-font;
     font-weight: 700;
     letter-spacing: 0.05em;
 
@@ -115,7 +117,7 @@
   }
 
   .item-weight {
-    font-family: Stolzl;
+    font-family: $secondary-font;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -124,7 +126,7 @@
   }
   .item-description {
     width: 351px;
-    font-family: Stolzl;
+    font-family: $secondary-font;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -149,7 +151,7 @@
 
     .item-text {
       width: 376px;
-      font-family: Stolzl;
+      font-family: $secondary-font;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
@@ -177,7 +179,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 526px;
-    font-family: Gotham Pro;
+    font-family: $main-font;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
@@ -195,7 +197,7 @@
       .content {
         padding-top: 20px;
         text-transform: none;
-        font-family: Stolzl;
+        font-family: $secondary-font;
         font-size: 14px;
         font-weight: 400;
         line-height: 32px;
@@ -204,7 +206,7 @@
   }
 
   .right-side {
-    font-family: Gotham Pro;
+    font-family: $main-font;
     letter-spacing: 0.05em;
     h3 {
       font-size: 32px;
@@ -229,21 +231,6 @@
         line-height: 21px;
         text-align: center;
         text-transform: uppercase;
-    }
-
-    .icon {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 2px solid #D5621D;  
-        
-        img {
-            position: absolute;
-            left: 22%;
-            top: 23%;
-        }
     }
     .icons {
        display: flex;

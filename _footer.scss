@@ -1,0 +1,53 @@
+﻿.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 100px;
+
+  .left-side {
+    border: 2px solid #d5621d;
+    background-color: #d5621d1a;
+    padding: 48px;
+
+    h4 {
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .text {
+      font-family: $secondary-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      margin-bottom: 35px;
+    }
+    .text:last-child {
+      margin-bottom: 0;
+    }
+
+    .top-content {
+      margin-bottom: 45px;
+    }
+    .bottom-content {
+      margin-top: 45px;
+    }
+  }
+}
+
+.underline-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+  opacity: 0.5;
+
+  span {
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
