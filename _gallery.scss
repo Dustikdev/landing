@@ -1,0 +1,11 @@
+﻿#gallery {
+  .gallery-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .image-lens {
+    position: relative;
+  }
+
+}

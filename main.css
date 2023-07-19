@@ -8,6 +8,11 @@ body {
   background-color: #210e09;
 }
 
+footer {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -186,6 +191,15 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+}
+
+#gallery .gallery-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+#gallery .image-lens {
+  position: relative;
 }
 
 #presentation {
