@@ -1,11 +1,11 @@
 ﻿header {
   margin: 0 auto;
   padding: 30px 0 53px 0;
-  width: 1305px;
+  max-width: 1296px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 200px;
+  justify-content: space-between;
+  gap: 20px;
 }
 .header-img {
   width: 157px;
