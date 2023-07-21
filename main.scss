@@ -162,6 +162,7 @@
 }
 
 #techrider {
+
   .rider-content {
     display: flex;
     justify-content: center;
@@ -218,25 +219,104 @@
       margin-bottom: 50px;
     }
     .right-grid {
-        display: grid;
-        gap: 25px 24px;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
+      display: grid;
+      gap: 25px 24px;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
     }
 
     span {
-        margin-top: 5px;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 21px;
-        text-align: center;
-        text-transform: uppercase;
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
     }
     .icons {
-       display: flex;
-       justify-content: center;
-       gap: 25px; 
+      display: flex;
+      justify-content: center;
+      gap: 25px;
     }
+  }
+}
+
+@media (min-width: 851px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  header {
+    position: relative;
+    padding: 10px 40px 10px 10px;
+    // overflow: hidden;
+    .header-img {
+      width: 118px;
+    }
+    nav {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      align-items: end;
+      gap: 10px;
+      top: 50px;
+      right: 0;
+      transition: all 0.8s ease;
+      transform: translateX(100%);
+
+      &.visible {
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  .btn {
+    padding: 8px 16px;
+
+    &.fill {
+      display: inline-block;
+      background-color: $button-color;
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      letter-spacing: 0.05em;
+    }
+    &.unfill {
+      border: 1px solid $button-color;
+      font-family: $secondary-font;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 12px;
+      // letter-spacing: 0.05em;
+    }
+  }
+
+  .icon-button {
+    position: absolute;
+    right: 10px;
+  }
+
+  #presentation {
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+  #events-tourists {
+    display: none;
+  }
+  #techrider {
+    display: none;
+  }
+  footer {
+    display: none;
   }
 }

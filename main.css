@@ -120,17 +120,14 @@ header {
   justify-content: space-between;
   gap: 20px;
 }
-
-.header-img {
+header .header-img {
   width: 157px;
 }
-
-nav {
+header nav {
   display: flex;
   gap: 30px;
 }
-
-.header-refs {
+header .header-refs {
   font-family: "Stolzl", monospace;
   font-size: 14px;
   font-weight: 400;
@@ -418,4 +415,74 @@ nav {
   display: flex;
   justify-content: center;
   gap: 25px;
+}
+
+@media (min-width: 851px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+  header {
+    position: relative;
+    padding: 10px 40px 10px 10px;
+  }
+  header .header-img {
+    width: 118px;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    top: 50px;
+    right: 0;
+    transition: all 0.8s ease;
+    transform: translateX(100%);
+  }
+  header nav.visible {
+    transform: translateX(-10px);
+  }
+  .btn {
+    padding: 8px 16px;
+  }
+  .btn.fill {
+    display: inline-block;
+    background-color: #d5621d;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+  }
+  .btn.unfill {
+    border: 1px solid #d5621d;
+    font-family: "Stolzl", monospace;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  .icon-button {
+    position: absolute;
+    right: 10px;
+  }
+  #presentation {
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+  #events-tourists {
+    display: none;
+  }
+  #techrider {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

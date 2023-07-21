@@ -6,17 +6,20 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  
+  .header-img {
+    width: 157px;
+  }
+  nav {
+    display: flex;
+    gap: 30px;
+  }
+  .header-refs {
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
 }
-.header-img {
-  width: 157px;
-}
-nav {
-  display: flex;
-  gap: 30px;
-}
-.header-refs {
-  font-family: $secondary-font;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-}
+
+
