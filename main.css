@@ -51,9 +51,6 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.section-header h2 {
-  padding: 40px 0 80px 0;
-}
 
 .lead {
   font-family: "Gotham Pro", sans-serif;
@@ -75,7 +72,7 @@ h2 {
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.05em;
-  text-align: center;
+  padding: 40px 0 80px 0;
 }
 
 .slider {
@@ -207,8 +204,6 @@ header .header-refs {
 }
 #presentation .tabs {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 #presentation .images {
   display: grid;
@@ -368,6 +363,7 @@ header .header-refs {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 20px 40px 20px 40px;
+  align-items: center;
   border-radius: 5px;
 }
 #techrider .dropdown-menu.closed {
@@ -426,9 +422,24 @@ header .header-refs {
   .desktop-only {
     display: none !important;
   }
+  .container {
+    margin-bottom: 50px;
+  }
+  .lead {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 20px 7px 20px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    padding: 20px 0 20px 0;
+  }
   header {
     position: relative;
     padding: 10px 40px 10px 10px;
+    margin-bottom: 30px;
   }
   header .header-img {
     width: 118px;
@@ -454,9 +465,9 @@ header .header-refs {
     display: inline-block;
     background-color: #d5621d;
     font-family: "Gotham Pro", sans-serif;
-    font-size: 18px;
+    font-size: 8px;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 12px;
     letter-spacing: 0.05em;
   }
   .btn.unfill {
@@ -470,19 +481,179 @@ header .header-refs {
     position: absolute;
     right: 10px;
   }
-  #presentation {
-    display: none;
+  .slider {
+    width: 30px;
+    height: 30px;
   }
-  #menu {
-    display: none;
+  .slider img {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    height: 50%;
+    width: 50%;
+  }
+  #presentation {
+    margin-bottom: 50px;
+    padding: 0 10px;
+  }
+  #presentation img {
+    height: 180px;
+    width: 140px;
+  }
+  #presentation .tab {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  #presentation .images {
+    padding: 10px;
+    gap: 10px;
+  }
+  #menu .sliders-grid-flex {
+    margin-bottom: 40px;
+    gap: 10px;
+  }
+  #menu .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #menu .menu-item {
+    gap: 10px;
+  }
+  #menu .menu-item img {
+    width: 90px;
+    height: 90px;
+  }
+  #menu .item-name-price span {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5.5px 0;
+  }
+  #menu .item-name-price .price {
+    padding: 5px 14px 5px 14px;
+    border-radius: 5px;
+    border: 2px solid #d5621d;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  #menu .item-weight {
+    font-family: "Stolzl", monospace;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #d5621d;
+    margin-bottom: 0;
+  }
+  #menu .item-description {
+    width: 200px;
+    font-family: "Stolzl", monospace;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
   }
   #events-tourists {
-    display: none;
+    padding: 0 10px;
+    flex-direction: column;
+    gap: 30px;
   }
-  #techrider {
-    display: none;
+  #events-tourists .side-item {
+    gap: 20px;
+  }
+  #events-tourists .side-item h2 {
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+  #events-tourists .side-item .item-text {
+    width: auto;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  #techrider .rider-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 10px;
+  }
+  #techrider .left-side {
+    gap: 10px;
+  }
+  #techrider .dropdown-menu {
+    max-width: 300px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 10px 20px;
+  }
+  #techrider .dropdown-menu.closed {
+    background-color: rgba(213, 98, 29, 0.1019607843);
+  }
+  #techrider .dropdown-menu.opened {
+    background-color: #d5621d;
+  }
+  #techrider .dropdown-menu.opened .content {
+    padding-top: 10px;
+    text-transform: none;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  #techrider .right-side h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+  #techrider .right-side .right-grid {
+    gap: 15px;
+  }
+  #techrider .right-side .dj-photo {
+    width: 150px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
   }
   footer {
-    display: none;
+    margin-bottom: 20px;
+  }
+  footer .footer-content {
+    margin: 0 10px 50px;
+  }
+  footer .footer-content .left-side {
+    border: 2px solid #d5621d;
+    background-color: rgba(213, 98, 29, 0.1019607843);
+    padding: 28px;
+  }
+  footer .footer-content .left-side h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+  footer .footer-content .left-side .text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  footer .footer-content .left-side .text:last-child {
+    margin-bottom: 0;
+  }
+  footer .footer-content .left-side .top-content {
+    margin-bottom: 25px;
+  }
+  footer .footer-content .left-side .bottom-content {
+    margin-top: 25px;
+  }
+  footer .dividing-line {
+    margin: 0 10px;
+  }
+  footer .underline-text {
+    padding: 10px;
+  }
+  footer .underline-text span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
