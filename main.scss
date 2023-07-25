@@ -409,12 +409,12 @@
 
     .side-item {
       gap: 20px;
-  
+
       h2 {
         padding-top: 5px;
         padding-bottom: 0;
       }
-  
+
       .item-text {
         width: auto;
         font-size: 12px;
@@ -422,7 +422,6 @@
         text-align: center;
       }
     }
-
   }
 
   #techrider {
@@ -440,11 +439,11 @@
       font-weight: 700;
       line-height: 18px;
       padding: 10px 20px;
-  
+
       &.closed {
         background-color: #d5621d1a;
       }
-  
+
       &.opened {
         background-color: #d5621d;
         .content {
@@ -455,75 +454,75 @@
           line-height: 18px;
         }
       }
-  }
-  .right-side {
-    h3 {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 36px;
-      margin-bottom: 40px;
     }
-
-    .right-grid {
-      gap: 15px;
-    }
-    .dj-photo {
-      width:  150px;
-      height: auto;
-      justify-self: center;
-      align-self: center;
-    }
-  }
-}
-footer {
-  margin-bottom: 20px;
-  .footer-content {
-    margin: 0 10px 50px;
-
-  
-    .left-side {
-      border: 2px solid #d5621d;
-      background-color: #d5621d1a;
-      padding: 28px;
-  
-      h4 {
-        font-size: 14px;
+    .right-side {
+      h3 {
+        font-size: 24px;
         font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0.05em;
-        margin-bottom: 10px;
+        line-height: 36px;
+        margin-bottom: 40px;
       }
-      .text {
-        font-size: 12px;
+
+      .right-grid {
+        gap: 15px;
+      }
+      .dj-photo {
+        width: 150px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+  footer {
+    margin-bottom: 20px;
+    .footer-content {
+      margin: 0 10px 50px;
+
+      .left-side {
+        border: 2px solid #d5621d;
+        background-color: #d5621d1a;
+        padding: 28px;
+
+        h4 {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.05em;
+          margin-bottom: 10px;
+        }
+
+        .text {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          margin-bottom: 15px;
+        }
+
+        .text:last-child {
+          margin-bottom: 0;
+        }
+
+        .top-content {
+          margin-bottom: 25px;
+        }
+        .bottom-content {
+          margin-top: 25px;
+        }
+      }
+    }
+    .dividing-line {
+      margin: 0 10px;
+    }
+
+    .underline-text {
+      padding: 10px;
+
+      span {
+        font-size: 10px;
         font-weight: 400;
         line-height: 18px;
-        margin-bottom: 15px;
-      }
-      .text:last-child {
-        margin-bottom: 0;
-      }
-  
-      .top-content {
-        margin-bottom: 25px;
-      }
-      .bottom-content {
-        margin-top: 25px;
       }
     }
   }
-  .dividing-line {
-    margin: 0 10px;
-  }
-  
-  .underline-text {
-    padding: 10px;
-  
-    span {
-      font-size: 10px;
-      font-weight: 400;
-      line-height: 18px;
-    }
-  }
-  
-}
 }
