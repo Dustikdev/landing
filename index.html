@@ -11,15 +11,15 @@
   </head>
   <body>
     <header>
-      <img src="./assets/headerLogo.svg" alt="headerLogo" class="header-img" />
-      <nav>
-        <a href="./index.html" class="header-refs">Главная</a>
-        <a href="#" class="header-refs">Меню</a>
-        <a href="./poster.html" class="header-refs">Афиша</a>
-        <a href="#" class="header-refs">Сотрудничество</a>
-        <a href="./gallery.html" class="header-refs">Галерея</a>
-        <a href="./index.html" class="header-refs">Новости</a>
-      </nav>
+        <img src="./assets/headerLogo.svg" alt="headerLogo" class="header-img" />
+          <nav>
+            <a href="./index.html" class="header-refs">Главная</a>
+            <a href="#" class="header-refs">Меню</a>
+            <a href="./poster.html" class="header-refs">Афиша</a>
+            <a href="#" class="header-refs">Сотрудничество</a>
+            <a href="./gallery.html" class="header-refs">Галерея</a>
+            <a href="./index.html" class="header-refs">Новости</a>
+          </nav>
       <a href="./index.html" class="btn unfill">Бронирование</a>
       <img
         src="./assets/mobile/BurgerMenu.svg"
@@ -34,14 +34,22 @@
       </div>
       <div>
         <div class="tabs">
-          <div class="tab">ближайшие</div>
-          <div class="tab right-tab">скоро</div>
+          <div class="tab pressed-tab">ближайшие</div>
+          <div class="tab unpressed-tab">скоро</div>
         </div>
-        <div class="images">
-          <img src="./assets/image1.png" alt="" />
-          <img src="./assets/image2.png" alt="" />
-          <img src="./assets/image3.png" alt="" />
-          <img src="./assets/image4.png" alt="" />
+        <div class="tab-images">
+          <div class="images visible-images">
+            <img src="./assets/image1.png" alt="" />
+            <img src="./assets/image2.png" alt="" />
+            <img src="./assets/image3.png" alt="" />
+            <img src="./assets/image4.png" alt="" />
+          </div>
+          <div class="images invisible-images">
+            <img src="./assets/image4.png" alt="" />
+            <img src="./assets/image3.png" alt="" />
+            <img src="./assets/image2.png" alt="" />
+            <img src="./assets/image1.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -202,7 +210,7 @@
         <span>Разработано d-e-n.ru</span>
       </div>
     </footer>
-    <script src="./scripts/navMenuTransform.js"></script>
+    <script src="./scripts/main.js"></script>
     <script src="./scripts/slider.js"></script>
   </body>
 </html>

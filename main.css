@@ -112,6 +112,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  overflow: hidden;
 }
 header .header-img {
   width: 157px;
@@ -201,18 +202,24 @@ header .header-refs {
 #presentation .tabs {
   display: flex;
 }
+#presentation .tab-images {
+  display: flex;
+}
 #presentation .images {
-  display: grid;
   justify-content: center;
   align-items: center;
   background-color: rgba(213, 98, 29, 0.1019607843);
   gap: 26px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   padding: 39px 35px 37px 35px;
 }
+#presentation .images.visible-images {
+  display: grid;
+}
+#presentation .images.invisible-images {
+  display: none;
+}
 #presentation .tab {
-  background-color: rgba(213, 98, 29, 0.1019607843);
   flex: 1;
   font-family: "Gotham Pro", sans-serif;
   font-size: 14px;
@@ -224,7 +231,10 @@ header .header-refs {
   text-transform: uppercase;
   text-align: center;
 }
-#presentation .right-tab {
+#presentation .tab.pressed-tab {
+  background-color: rgba(213, 98, 29, 0.1019607843);
+}
+#presentation .tab.unpressed-tab {
   background-color: rgba(213, 98, 29, 0.0509803922);
 }
 #presentation .left-side {
@@ -458,7 +468,6 @@ header .header-refs {
     width: 118px;
   }
   header nav {
-    display: none;
     position: absolute;
     flex-direction: column;
     align-items: end;

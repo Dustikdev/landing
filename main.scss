@@ -13,18 +13,25 @@
   .tabs {
     display: flex;
   }
+  .tab-images {
+    display: flex;
+  }
   .images {
-    display: grid;
     justify-content: center;
     align-items: center;
     background-color: #d5621d1a;
     gap: 26px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     padding: 39px 35px 37px 35px;
+
+    &.visible-images {
+      display: grid;
+    }
+    &.invisible-images {
+      display: none;
+    }
   }
   .tab {
-    background-color: #d5621d1a;
     flex: 1;
     font-family: $main-font;
     font-size: 14px;
@@ -35,10 +42,15 @@
     padding: 12px 10px 7px 10px;
     text-transform: uppercase;
     text-align: center;
+
+    &.pressed-tab {
+      background-color: #d5621d1a;
+    }
+    &.unpressed-tab {
+      background-color: #d5621d0d;
+    }
   }
-  .right-tab {
-    background-color: #d5621d0d;
-  }
+
   .left-side {
     font-family: $main-font;
     position: relative;
@@ -81,7 +93,7 @@
     position: relative;
     overflow: hidden;
   }
-  .menu-container{
+  .menu-container {
     position: relative;
     margin-bottom: 96px;
     z-index: -1;
@@ -294,7 +306,7 @@
       width: 118px;
     }
     nav {
-      display: none;
+      // display: none;
       position: absolute;
       flex-direction: column;
       align-items: end;
@@ -374,7 +386,7 @@
       align-items: center;
     }
 
-    .menu-container{
+    .menu-container {
       margin-bottom: 40px;
       gap: 10px;
     }
