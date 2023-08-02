@@ -10,6 +10,7 @@ $slider-color: #d5621d;
 }
 body {
   background-color: #210e09;
+  font-family: $main-font;
 }
 footer {
   max-width: 1296px;
@@ -25,7 +26,6 @@ a {
   &.fill {
     display: inline-block;
     background-color: $button-color;
-    font-family: $main-font;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
@@ -67,7 +67,6 @@ a {
 
 h2 {
   text-transform: uppercase;
-  font-family: $main-font;
   font-size: 40px;
   font-weight: 900;
   line-height: 60px;

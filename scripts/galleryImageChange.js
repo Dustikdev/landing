@@ -1,4 +1,4 @@
-﻿"use strict"
+﻿// это частично работает
 
     var imageLens = document.querySelectorAll('.image-lens');
     imageLens.forEach(function(imageLens) {
@@ -11,6 +11,7 @@
         lens.style.left = '42%';
         lens.style.top = '41%';
         lens.style.opacity = '1';
+        lens.style.pointerEvents = 'none';
         imageLens.appendChild(lens);
         selectedImg.style.opacity = '0.1';
       });
