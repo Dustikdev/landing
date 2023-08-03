@@ -138,12 +138,13 @@ function createGrid(data) {
 }
 
 function moveSlider() {
-    let offset = 0;
-    const columnCount = Math.ceil(Object.keys(mock).length / 4)
-    let extremePosition = columnCount
+    const menuItemsCount = document.querySelectorAll('.menu-item').length;
     const menu = document.querySelector('.menu-container');
     const leftSlider = document.querySelector('.slider-left');
     const rightSlider = document.querySelector('.slider-right');
+    const columnCount = Math.ceil(menuItemsCount / 4);
+    let extremePosition = columnCount;
+    let offset = 0;
         leftSlider.addEventListener('click', () => {
             if (extremePosition > 2) {
                 extremePosition -= 1
@@ -156,9 +157,9 @@ function moveSlider() {
                 extremePosition += 1
             offset += 596;
             menu.style.left = offset + 'px';
-            }
-        })
-}
+            };
+        });
+};
 
-createGrid(mock)
-moveSlider()
+createGrid(mock);
+moveSlider();

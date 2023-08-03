@@ -1,4 +1,4 @@
-﻿// это частично работает
+﻿// это частично работает, но скрипт ранний, сделан через опу
 
     var imageLens = document.querySelectorAll('.image-lens');
     imageLens.forEach(function(imageLens) {
