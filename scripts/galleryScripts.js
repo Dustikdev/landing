@@ -1,6 +1,8 @@
 ﻿//скрипт для заблюривания фона и добавления линзы
+const modalWindow = document.querySelector(".modal-window");
+const gallery = document.querySelector(".gallery-content");
+
 function blur() {
-  const gallery = document.querySelector(".gallery-content");
   gallery.addEventListener("mouseover", function (event) {
     const image = event.target;
     if (image.classList.contains("selected-img")) {
@@ -18,13 +20,17 @@ function blur() {
   });
   gallery.addEventListener("click", function (event) {
     const image = event.target;
-    const modalWindow = document.querySelector(".modal-window");
     if (image.classList.contains("selected-img")) {
       let modalImage = event.target.cloneNode(true);
       modalImage.removeAttribute("class");
-      console.log(modalImage);
       modalWindow.classList.add("visible");
       modalWindow.append(modalImage);
+    }
+  });
+  document.addEventListener("click", (event) => {
+    if (event.target === modalWindow) {
+      modalWindow.classList.remove("visible");
+      modalWindow.innerHTML = ''
     }
   });
 }
