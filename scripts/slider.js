@@ -113,6 +113,7 @@
     },
 }
 
+
 function createGrid(data) {
     const grid = document.querySelector('.menu-grid');
     const gridColumns = Math.ceil(Object.keys(data).length / 4)
@@ -136,6 +137,9 @@ function createGrid(data) {
         grid.insertAdjacentHTML('beforeend', markup);
     }
 }
+function initSlider() {
+
+}
 
 function moveSlider() {
     const menuItemsCount = document.querySelectorAll('.menu-item').length;
@@ -143,19 +147,20 @@ function moveSlider() {
     const leftSlider = document.querySelector('.slider-left');
     const rightSlider = document.querySelector('.slider-right');
     const columnCount = Math.ceil(menuItemsCount / 4);
+    const shiftCount = 596;
     let extremePosition = columnCount;
     let offset = 0;
         leftSlider.addEventListener('click', () => {
             if (extremePosition > 2) {
                 extremePosition -= 1
-                offset -= 596;
+                offset -= shiftCount;
                 menu.style.left = offset + 'px';
             }
         })
         rightSlider.addEventListener('click', () => {
             if (extremePosition < columnCount) {
                 extremePosition += 1
-            offset += 596;
+            offset += shiftCount;
             menu.style.left = offset + 'px';
             };
         });

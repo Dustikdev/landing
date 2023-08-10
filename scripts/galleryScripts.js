@@ -21,7 +21,7 @@ function blur() {
   gallery.addEventListener("click", function (event) {
     const image = event.target;
     if (image.classList.contains("selected-img")) {
-      let modalImage = event.target.cloneNode(true);
+      let modalImage = event.target.cloneNode(false);
       modalImage.removeAttribute("class");
       modalWindow.classList.add("visible");
       modalWindow.append(modalImage);
